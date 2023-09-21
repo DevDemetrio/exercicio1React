@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CriandoLista from "./componets/CriandoLista";
+import DeleteUsuario from "./componets/DeleteUsuario";
+import MetodoFilter from "./componets/MetodoFilter";
+import MudaNomeClick from "./componets/MudaNomeClick";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MudaNomeClick />
+      <CriandoLista />
+      <DeleteUsuario />
+      <MetodoFilter />
     </div>
   );
 }
